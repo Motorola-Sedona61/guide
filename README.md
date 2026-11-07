@@ -137,3 +137,7 @@ Outputs are in `out/target/product/fogos` or `out/target/product/rhodep`. Userde
 | [android_device_motorola_rhodep-kernel](https://github.com/Motorola-Sedona61/android_device_motorola_rhodep-kernel) | Rhodep Android prebuilt layout |
 
 Successful compilation and staging establish that the build command completes. Generated sets still require device testing; they are not a claim that every hardware feature works.
+
+## Build testing
+
+The published builder completed full `FOGOS` and `RHODEP` builds, including the kernel, selected DTs, required modules, sanitized headers and complete prebuilt directories. The kernel manifest's build/module projects were also synced into a fresh checkout, where the generated root entrypoint and Fogos source link worked. The ROM local manifest was parsed against a clean LineageOS 24.0 manifest. These are build tests; hardware validation remains separate.
